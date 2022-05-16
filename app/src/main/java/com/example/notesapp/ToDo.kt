@@ -1,6 +1,6 @@
 package com.example.notesapp
 
-data class ToDo (
+data class Todo (
     val title: String,
-    val isChecked: Boolean = false,
+    var isChecked: Boolean = false,
 )
