@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddTodo" />
+        app:layout_constraintTop_toBottomOf="@+id/ibAddTodo" />
 
     <EditText
         android:id="@+id/etTodoTitle"
@@ -22,27 +22,28 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:hint="Enter Todo Title"
-        app:layout_constraintEnd_toStartOf="@+id/btnAddTodo"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/ibAddTodo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnAddTodo"
+
+    <ImageButton
+        android:id="@+id/ibAddTodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Add Todo"
-        app:layout_constraintEnd_toStartOf="@+id/btnDeleteDoneTodos"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        app:layout_constraintEnd_toStartOf="@+id/ibDeleteDoneTodos"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnDeleteDoneTodos"
+    <ImageButton
+        android:id="@+id/ibDeleteDoneTodos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:layout_marginEnd="8dp"
-        android:text="Delete done"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
